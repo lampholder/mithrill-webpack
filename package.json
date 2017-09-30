@@ -1,0 +1,30 @@
+{
+  "name": "mithrill-webpack",
+  "version": "1.0.0",
+  "description": "This is the start of a mithrill + webpack project. I've been following this tutoral for the webpack junk: https://webpack.github.io/docs/tutorials/getting-started/ Top tips:  - run you a dev webserver with `webpack-dev-server --progress --colors`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lampholder/mithrill-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lampholder/mithrill-webpack/issues"
+  },
+  "homepage": "https://github.com/lampholder/mithrill-webpack#readme",
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "mithril": "^1.1.4",
+    "style-loader": "^0.18.2"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
