@@ -19,11 +19,13 @@
   },
   "homepage": "https://github.com/lampholder/mithrill-webpack#readme",
   "dependencies": {
+    "amazon-cognito-identity-js": "^1.20.0",
     "css-loader": "^0.28.7",
     "mithril": "^1.1.4",
     "style-loader": "^0.18.2"
   },
   "devDependencies": {
+    "json-loader": "^0.5.7",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }
