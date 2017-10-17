@@ -35,3 +35,46 @@ body {
     margin-left: 106px;
     height: 36px;
 }
+
+.registration-login-row {
+    font-size: large;
+    height: 40px;
+}
+
+.login {
+}
+
+.login-label {
+    font-size: large;
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+.login-label:after {
+    content: ':';
+}
+
+.login-input {
+    border: 1px solid darkgrey;
+    border-radius: 2px;
+    font-size: large;
+    margin: 6px;
+    padding: 6px;
+    width: 220px;
+    height: 36px;
+}
+
+.login-button {
+    font-size: large;
+    width: 233px;
+    margin: 6px;
+    padding: 6px;
+    margin-left: 106px;
+    height: 36px;
+}
+
+.login-registration-row {
+    font-size: large;
+    height: 40px;
+}
