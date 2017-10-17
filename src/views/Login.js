@@ -1,25 +1,25 @@
 var m = require('mithril');
 var User = require('../models/User');
 
-var Registration = {};
+var Login = {};
 
 var viewModel = {
     email: null,
     password: null
 };
 
-Registration.view = function(ctrl) {
-    return m('.registration', {}, [
-               m('h1.registration-h1', 'Register'),
-               m('.registration-login-row', [
-                   m('span.registration-login-blurb', {}, 'I already have an account - '),
-                   m('a.registration-login-link', {href: '/#!/login'}, 'login here')
+Login.view = function(ctrl) {
+    return m('.login', {}, [
+               m('h1.registration-h1', 'Login'),
+               m('.login-registration-row', [
+                   m('span.login-register-blurb', {}, 'I don\'t have an account - '),
+                   m('a.login-register-link', {href: '/#!/register'}, 'register here')
                ]),
                m('.row', [
-                   m('label.registration-label',
+                   m('label.login-label',
                      {for: 'email'},
                      'Email'),
-                   m('input.registration-input.registration-input-email',
+                   m('input.login-input.login-input-email',
                      {id: 'email',
                       type: 'email',
                       placeholder: 'email@example.com',
@@ -28,10 +28,10 @@ Registration.view = function(ctrl) {
                      }),
                ]),
                m('.row', [
-                   m('label.registration-label',
+                   m('label.login-label',
                      {for: 'password'},
                      'Password'),
-                   m('input.registration-input.registration-input-password',
+                   m('input.login-input.login-input-password',
                      {id: 'password',
                       type: 'password',
                       placeholder: 'password',
@@ -39,14 +39,14 @@ Registration.view = function(ctrl) {
                       oninput: m.withAttr("value", function(value) {viewModel.password = value;}),
                      })
                ]),
-               m('button.registration-button',
+               m('button.login-button',
                  {onclick: function() {
-                               User.register(viewModel);
+                               User.login(viewModel);
                                       }
                  },
-                 'Register'
+                 'Login'
                )
     ]);
 };
 
-module.exports = Registration;
+module.exports = Login;
