@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./src/js/index.js",
+    entry: "./src/index.js",
     output: {
         path: __dirname,
         filename: "./bin/app.js"
@@ -7,7 +7,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: "style-loader!css-loader" },
-            { test: /\.json$/, loader: "json" }
+            { test: /\.json$/, loader: "json-loader" }
         ]
     }
 };
